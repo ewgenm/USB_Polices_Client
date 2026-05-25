@@ -22,7 +22,7 @@ object FormClient: TFormClient
   object Label2: TLabel
     Left = 8
     Top = 96
-    Width = 120
+    Width = 95
     Height = 17
     Caption = #1053#1077' '#1087#1086#1076#1082#1083#1102#1095#1077#1085#1086
     Font.Charset = DEFAULT_CHARSET
@@ -46,6 +46,8 @@ object FormClient: TFormClient
     Height = 25
     MaxLength = 15
     TabOrder = 0
+    OnExit = edtServerIPExit
+    OnKeyPress = edtServerIPKeyPress
   end
   object btnScan: TButton
     Left = 8
@@ -63,6 +65,7 @@ object FormClient: TFormClient
     Height = 25
     Caption = #1057#1084#1077#1085#1080#1090#1100' '#1076#1086#1089#1090#1091#1087' USB'
     TabOrder = 2
+    OnClick = btnToggleClick
   end
   object IdTCPClient1: TIdTCPClient
     ConnectTimeout = 0

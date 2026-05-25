@@ -11,7 +11,6 @@ uses
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  TStyleManager.TrySetStyle('CopperDark');
   Application.CreateForm(TFormClient, FormClient);
   Application.Run;
 end.
