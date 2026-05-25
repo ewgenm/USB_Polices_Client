@@ -52,7 +52,7 @@ end;
 
 procedure TFormClient.edtServerIPKeyPress(Sender: TObject; var Key: Char);
 begin
-  // Разрешаем только цифры, точки и BackSpace
+  // Разрешаем только цифры, точки и BackSpace !
   if not (Key in ['0'..'9', '.', #8]) then Key := #0;
   // Запрещаем несколько точек подряд или точку в начале
   if (Key = '.') and ((Pos('.', edtServerIP.Text) > 0) and (edtServerIP.SelStart = 0)) then
