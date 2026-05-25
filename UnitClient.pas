@@ -19,6 +19,7 @@ type
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
+    procedure UpdateUsbState;
   public
     { Public declarations }
   end;
@@ -43,6 +44,11 @@ begin
     //AutoDiscoverServer;
   end
   ).Start;
+end;
+
+procedure TFormClient.UpdateUsbState;
+begin
+//
 end;
 
 end.
